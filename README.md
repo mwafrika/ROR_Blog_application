@@ -1,24 +1,35 @@
-# README
+# Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Blog App is a full stack blog app built with Ruby on Rails framework that allows users to create, edit, and delete posts and comments on their blog.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Run bundle `install` to install the dependancies.
 
-* System dependencies
+Run `rails s` or `rails server` to start the server.
 
-* Configuration
+Open `http://localhost:3000` in your browser.
 
-* Database creation
+Run `bundle exec rspec`. to run the tests.
 
-* Database initialization
+## About me
 
-* How to run the test suite
+👤 Mwafrika Josué
 
-* Services (job queues, cache servers, search engines, etc.)
+- GitHub: @mwafrika
+- Twitter: @mwafrikamufung1
+- LinkedIn: @mwafrika-mufungizi
 
-* Deployment instructions
+## 🤝 Contributing
 
-* ...
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the issues page.
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## License
+
+This is a MIT licensed project.
