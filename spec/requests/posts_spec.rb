@@ -36,5 +36,4 @@ RSpec.describe 'Posts Controller', type: :request do
       expect(response).to_not render_template(:index)
     end
   end
- 
 end
