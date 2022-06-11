@@ -8,7 +8,7 @@ RSpec.describe User, type: :model do
   it 'should save the data' do
     expect(subject).to be_valid
   end
-  
+
   it 'name should be present' do
     subject.name = nil
     expect(subject).to_not be_valid
