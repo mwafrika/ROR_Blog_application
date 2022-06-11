@@ -5,21 +5,21 @@ class PostsController < ApplicationController
   end
 
   def show
-    # @user = User.find(params[:user_id])
-    @user = current_user
+    @user = User.find(params[:user_id])
+    # @user = current_user
     @post = @user.posts.find(params[:id])
     @comment = @post.comments
   end
 
   def new
-    # @user = User.find(params[:user_id])
-    @user = current_user
+    @user = User.find(params[:user_id])
+    # @user = current_user
     @post = @user.posts.new
   end
 
   def create
-    # @user = User.find(params[:user_id])
-    @user = current_user
+    @user = User.find(params[:user_id])
+    # @user = current_user
     @post = @user.posts.create(post_params)
 
     @post.user = @user
