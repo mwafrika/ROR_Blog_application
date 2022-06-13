@@ -1,6 +1,6 @@
 # Blog App
 
-Blog App is a full stack blog app built with Ruby on Rails framework that allows users to create, edit, and delete posts and comments on their blog.
+Blog Application is a full stack application built with Ruby on Rails framework that allows users to create, edit, and delete posts and comments on their blog.
 
 ## Getting Started
 
