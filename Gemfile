@@ -77,6 +77,8 @@ group :development, :test do
 
   gem 'rails-controller-testing' # needed for tempelates
 
+  gem "database_cleaner" # needed for tests
+
   gem 'rspec-rails'
 end
 
@@ -96,6 +98,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem 'capybara'
 
   gem 'selenium-webdriver'
 
