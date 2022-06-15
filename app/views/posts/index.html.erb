@@ -23,11 +23,15 @@
           </div>
           <div class="comment__like">
             <p>Comments : <%= @user.comments.length %> </p>  
-            <p>Likes:<%= @user.likes.length %> </p>  
+            <p>Likes:<%= @user.likes.length %> </p> 
+            <%# handle delete post %>
+            <%# <% if can? :read, @post %> 
+               <%# <%= link_to "View", @post %> 
+            <%# <% end %>  
           </div>
         <div>
     </section>
-   <% end %>
+  <% end %>
 <% end %>
  <%= link_to 'Create new post', new_user_post_path(@user.id), class: "see-all" %> 
  <p class="copy-right">© 2022 GitHub, Inc. Terms</p>

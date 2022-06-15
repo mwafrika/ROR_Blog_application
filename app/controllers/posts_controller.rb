@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
+
   def index
     @user = @user = User.includes(posts: %i[comments likes]).find_by(id: params[:user_id])
     @post = @user.posts
