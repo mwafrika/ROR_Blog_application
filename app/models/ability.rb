@@ -6,6 +6,7 @@ class Ability
     user ||= User.new # guest user (not logged in)
     can :read, Post
     can :read, User
+    can :read, Comment
     return unless user.present?
 
     if user.role == 'admin'
