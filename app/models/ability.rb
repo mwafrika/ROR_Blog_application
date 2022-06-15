@@ -11,9 +11,9 @@ class Ability
     if user.role == 'admin'
       can :manage, :all
     else
-      can :create, Comment
       can :destroy, Comment, user_id: user.id
       can :manage, Post, user_id: user.id
+      can :create, Comment
     end
 
     #   if user.admin?
