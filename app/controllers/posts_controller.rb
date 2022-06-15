@@ -30,8 +30,6 @@ class PostsController < ApplicationController
     end
   end
 
-  private
-
   def destroy
     @user = current_user
     post = Post.find(params[:id])
@@ -44,6 +42,8 @@ class PostsController < ApplicationController
       redirect_to user_post_path(@user, post)
     end
   end
+
+  private
 
   def post_params
     params.require(:post).permit(:title, :text)
