@@ -23,7 +23,7 @@ class CommentsController < ApplicationController
     @comment = Comment.includes(:user, :post).find(params[:id])
     user = @comment.user
     post = @comment.post
-    
+
     if @comment.destroy
       flash[:success] = 'Comment deleted successfully'
     else
@@ -31,8 +31,9 @@ class CommentsController < ApplicationController
     end
     redirect_to user_post_path(user, post)
   end
-  
+
   private
+
   def comment_params
     params.require(:comment).permit(:text)
   end
