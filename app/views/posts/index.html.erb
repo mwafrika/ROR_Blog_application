@@ -19,6 +19,11 @@
             <h3>Comments</h3>
             <% @user.comments.each do |comm| %>
               <h4>Comment# <%= comm.id %>:<%= comm.text %></h4>
+              <% if can? :destroy, comment %>
+            <%= form_with url: user_post_comment_path(@user, @post, comment), method: :delete do %>
+              <button class="custom-button">Delete</button>
+            <% end %>
+          <% end %>
             <% end %>
           </div>
           <div class="comment__like">
