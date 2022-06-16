@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  subject { User.new(name: 'gloire', email:'gloire@gmail.com', password: '123456', password_confirmation: '123456') }
-  
+  subject { User.new(name: 'gloire', email: 'gloire@gmail.com', password: '123456', password_confirmation: '123456') }
+
   before { subject.save }
 
   it 'should save the data' do

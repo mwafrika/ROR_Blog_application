@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   subject do
-    user = User.create(id:8,name: 'John4', email:'john4@gmail.com', password: '123456', password_confirmation: '123456')
+    user = User.create(id: 8, name: 'John4', email: 'john4@gmail.com', password: '123456',
+                       password_confirmation: '123456')
     Post.new(title: 'Hello', text: 'This is my first post', commentsCounter: 0, likesCounter: 0, user_id: user.id)
   end
 

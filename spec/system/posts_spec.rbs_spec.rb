@@ -1,5 +1,5 @@
 # require 'rails_helper'
- 
+
 # RSpec.describe 'PostsSpec.rbs', type: :system do
 #   before do
 #     driven_by(:rack_test)
@@ -12,6 +12,3 @@
 #     end
 #   end
 # end
-
-
-
