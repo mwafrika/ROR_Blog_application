@@ -1,16 +1,16 @@
-require 'rails_helper'
+# require 'rails_helper'
 
-RSpec.describe Post, type: :model do
-  subject do
-    user = User.create(id: 8, name: 'John4', email: 'john4@gmail.com', password: '123456',
-                       password_confirmation: '123456')
-    Post.new(title: 'Hello', text: 'This is my first post', commentsCounter: 0, likesCounter: 0, user_id: user.id)
-  end
+# RSpec.describe Post, type: :model do
+#   subject do
+#     user = User.create(id: 8, name: 'John4', email: 'john4@gmail.com', password: '123456',
+#                        password_confirmation: '123456')
+#     Post.new(title: 'Hello', text: 'This is my first post', commentsCounter: 0, likesCounter: 0, user_id: user.id)
+#   end
 
-  before { subject.save }
+#   before { subject.save }
 
-  it 'title should be present' do
-    subject.title = nil
-    expect(subject).to_not be_valid
-  end
-end
+#   it 'title should be present' do
+#     subject.title = nil
+#     expect(subject).to_not be_valid
+#   end
+# end
