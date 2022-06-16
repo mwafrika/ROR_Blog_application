@@ -7,11 +7,11 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 User.create([
-    {id:1, name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.', postsCounter: 0},
-    {id:2, name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.', postsCounter: 0},
-    {id:3, name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.', postsCounter: 0}])
+    {id:4, name: 'John', email:'john@gmail.com', password: '123456', password_confirmation: '123456'},
+    {id:5, name: 'John2', email:'john2@gmail.com', password: '123456', password_confirmation: '123456'},
+    {id:6, name: 'John3', email:'john3@gmail.com', password: '123456', password_confirmation: '123456'}])
 Post.create(
-    [{title: 'Hello', text: 'This is my first post',commentsCounter: 0, likesCounter: 0, user_id: 1},
-    {title: 'Hello', text: 'This is my first post',commentsCounter: 0, likesCounter: 0, user_id: 2},
-    {title: 'Hello', text: 'This is my first post',commentsCounter: 0, likesCounter: 0, user_id: 3},
-    {title: 'Hello', text: 'This is my first post',commentsCounter: 0, likesCounter: 0, user_id: 2}])
+    [{title: 'Hello', text: 'This is my first post',commentsCounter: 0, likesCounter: 0, user_id: 4},
+    {title: 'Hello', text: 'This is my first post',commentsCounter: 0, likesCounter: 0, user_id: 5},
+    {title: 'Hello', text: 'This is my first post',commentsCounter: 0, likesCounter: 0, user_id: 4},
+    {title: 'Hello', text: 'This is my first post',commentsCounter: 0, likesCounter: 0, user_id: 6}])
