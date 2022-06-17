@@ -6,7 +6,7 @@
     <h1><%= @user.name %><h1>
     </div>
     <div class="user-card__email">
-    <p>Number of posts:<%= @user.posts.length %> </p>  
+    <p>Number of posts:<%= @user.postsCounter %> </p>  
   </div>
 </section>
    
@@ -20,7 +20,7 @@
           <% end %>
             <h3>Comments</h3>
             <% post.user.comments.each do |comment| %>
-              <h4>Comment# <%= comment.id %>:<%= comment.text %></h4>
+              <h4>Comment#<%= comment.id %>:<%=comment.text %></h4>
               <% if can? :destroy, comment %>
                 <%= form_with url: user_post_comment_path(@user, @post, comment), method: :delete, data: { confirm: 'Are you sure?' } do %>
                   <button class="custom-button">Delete</button> 
@@ -29,8 +29,8 @@
             <% end %>
           </div>
           <div class="comment__like">
-            <p>Comments : <%= @user.comments.length %> </p>  
-            <p>Likes:<%= @user.likes.length %> </p> 
+            <p>Comments:<%= @user.postsCounter %> </p>  
+            <p>Likes:<%= post.likesCounter %> </p> 
           </div>
           <div class="actions">
           <% if can? :destroy, @post %>

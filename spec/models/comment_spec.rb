@@ -1,13 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  before
   subject do
-    user = User.where(id: 1).first
-    post = Post.where(user_id: user.id).first
-    # post = Post.create(id: user.id, title: 'Hello', text: 'This is my first post', commentsCounter: 0, likesCounter: 0,
-    #                    user_id: user.id)
-    Comment.new(user_id: user.id, post_id: post.id, text: 'Good improvements')
+    Comment.new(user_id: User.first.id, post_id: Post.first.id, text: 'Good improvements')
   end
 
   before { subject.save }
