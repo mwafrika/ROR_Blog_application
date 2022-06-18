@@ -9,8 +9,13 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   validates :postsCounter, presence: true, numericality: { greater_than_or_equal_to: 0 }
+  after_save :add_token
 
   def recent_post
     posts.last(3)
+  end
+
+  def add_token
+    update_column(:authentication_token, ApiHelper::JsonWebToken.encode(email))
   end
 end
