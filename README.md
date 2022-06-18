@@ -12,13 +12,18 @@ Open `http://localhost:3000` in your browser.
 
 Run `bundle exec rspec`. to run the tests.
 
-## About me
+## Authors
 
-👤 Mwafrika Josué
+👤 **Mwafrika Josué**
 
 - GitHub: @mwafrika
 - Twitter: @mwafrikamufung1
 - LinkedIn: @mwafrika-mufungizi
+
+👤 **Jerry Owusu**
+
+- GitHub: [jerryowusu](https://github.com/jerryowusu)
+- LinkedIn: [jerry owusu](https://www.linkedin.com/in/jerry-owusu/)
 
 ## 🤝 Contributing
 
